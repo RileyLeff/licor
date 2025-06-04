@@ -1,4 +1,0 @@
-useDynLib(licorclient, .registration = TRUE)
-
-export(convert)
-export(file_to_dataframe)
