@@ -1,0 +1,2908 @@
+# ===============================================
+# LI-COR 6800 Output Variables
+# ===============================================
+
+# --- Chamber Configurations ---
+# This section groups variables related to specific chamber types and their general constants.
+
+# Aquatic Chamber Configuration and Settings
+[chamber_configurations.aquatic]
+source_table = "Table 4-4"
+section_title = "Aquatic Chamber Configuration and Settings"
+description = "Defines the specific variables and settings for the LI-6800 Aquatic Chamber."
+
+[[chamber_configurations.aquatic.variables]]
+display_label = "Fan On"
+units = ""
+description = "Chamber circulation fan"
+internal_name = "FanOn"
+
+[[chamber_configurations.aquatic.variables]]
+display_label = "Pump On"
+units = ""
+description = "Aquatic sample air flow"
+internal_name = "PumpOn"
+
+[[chamber_configurations.aquatic.variables]]
+display_label = "Pump Speed"
+units = "V"
+description = "Operating range 2 to 5 V"
+internal_name = "PumpV"
+
+[[chamber_configurations.aquatic.variables]]
+display_label = "Bubble effect"
+units = ""
+description = "Bubble effect on tau_w"
+internal_name = "bubble"
+
+[[chamber_configurations.aquatic.variables]]
+display_label = "Blue adjust"
+units = ""
+description = "Quantum sensor cal adjust, blue"
+internal_name = "qc_b"
+
+[[chamber_configurations.aquatic.variables]]
+display_label = "Red adjust"
+units = ""
+description = "Quantum sensor cal adjust, red"
+internal_name = "qc_r"
+
+[[chamber_configurations.aquatic.variables]]
+display_label = "tau_wb"
+units = ""
+description = "Chamber clear water transmittance, blue"
+internal_name = "tw_b"
+
+[[chamber_configurations.aquatic.variables]]
+display_label = "tau_wr"
+units = ""
+description = "Chamber clear water transmittance, red"
+internal_name = "tw_r"
+
+# Aquatic Chamber Light Measurements and Computations
+[chamber_configurations.aquatic_q_light]
+source_table = "Table 4-5"
+section_title = "Aquatic Chamber Light Related Measurements and Computations"
+description = "Variables pertaining to light absorption, incident, and transmitted flux within the aquatic chamber."
+
+[[chamber_configurations.aquatic_q_light.variables]]
+display_label = "Qabs"
+units = "µmol m-2 s-1"
+description = "Flux absorbed by algae"
+internal_name = "Qabs"
+
+[[chamber_configurations.aquatic_q_light.variables]]
+display_label = "Qabs*"
+units = "µmol s-1"
+description = "Absorbed quantum flow (Qabs X window area)"
+internal_name = "Qabs*"
+
+[[chamber_configurations.aquatic_q_light.variables]]
+display_label = "Qavg"
+units = "µmol m-2 s-1"
+description = "Average in-sample irradiance"
+internal_name = "Qavg"
+
+[[chamber_configurations.aquatic_q_light.variables]]
+display_label = "Qin"
+units = "µmol m-2 s-1"
+description = "Flux incident on aquatic sample"
+internal_name = "Qin"
+
+[[chamber_configurations.aquatic_q_light.variables]]
+display_label = "Qout"
+units = "µmol m-2 s-1"
+description = "Flux leaving aquatic sample"
+internal_name = "Qout"
+
+[[chamber_configurations.aquatic_q_light.variables]]
+display_label = "tau_s"
+units = ""
+description = "Measured sample transmittance"
+internal_name = "tau_s"
+
+[[chamber_configurations.aquatic_q_light.variables]]
+display_label = "tau_w"
+units = ""
+description = "Transmittance of water (adjusted for color)"
+internal_name = "tau_w"
+
+# Chamber Physical Constants
+[chamber_configurations.chamber_physical_constants]
+source_table = "Table 4-7"
+section_title = "Constants associated with the currently selected chamber"
+description = "Fixed parameters and coefficients relevant to the operational characteristics of the attached chamber."
+
+[[chamber_configurations.chamber_physical_constants.variables]]
+display_label = "Aperture"
+units = "cm2"
+description = "Attached chamber aperture"
+internal_name = "Aperture"
+
+[[chamber_configurations.chamber_physical_constants.variables]]
+display_label = "Chamber"
+units = ""
+description = "Attached chamber ID"
+internal_name = "Chamber"
+
+[[chamber_configurations.chamber_physical_constants.variables]]
+display_label = "blc_Po"
+units = "kPa"
+description = "Reference pressure for blc calculation"
+internal_name = "blc_Po"
+
+[[chamber_configurations.chamber_physical_constants.variables]]
+display_label = "blc_a"
+units = ""
+description = "Boundary layer coefficient ’a’"
+internal_name = "blc_a"
+
+[[chamber_configurations.chamber_physical_constants.variables]]
+display_label = "blc_b"
+units = ""
+description = "Boundary layer coefficient ’b’"
+internal_name = "blc_b"
+
+[[chamber_configurations.chamber_physical_constants.variables]]
+display_label = "blc_c"
+units = ""
+description = "Boundary layer coefficient ’c’"
+internal_name = "blc_c"
+
+[[chamber_configurations.chamber_physical_constants.variables]]
+display_label = "blc_d"
+units = ""
+description = "Boundary layer coefficient ’d’"
+internal_name = "blc_d"
+
+[[chamber_configurations.chamber_physical_constants.variables]]
+display_label = "blc_e"
+units = ""
+description = "Boundary layer coefficient ’e’"
+internal_name = "blc_e"
+
+[[chamber_configurations.chamber_physical_constants.variables]]
+display_label = "blc_maxS"
+units = "cm2"
+description = "Maximum area for blc calculation"
+internal_name = "blc_maxS"
+
+[[chamber_configurations.chamber_physical_constants.variables]]
+display_label = "blc_minS"
+units = "cm2"
+description = "Minimum area for blc calculation"
+internal_name = "blc_minS"
+
+# Soil Chamber Configuration and Settings
+[chamber_configurations.soil_chamber_configuration]
+source_table = "Table 4-34"
+section_title = "Settings used for the soil chamber"
+description = "User-configurable parameters and settings specific to the soil respiration chamber operation."
+
+[[chamber_configurations.soil_chamber_configuration.variables]]
+display_label = "Dead band"
+units = "s"
+description = "Delay after closing"
+internal_name = "DeadBand"
+
+[[chamber_configurations.soil_chamber_configuration.variables]]
+display_label = "# Reps"
+units = ""
+description = "Repetitions per measurement"
+internal_name = "NumReps"
+
+[[chamber_configurations.soil_chamber_configuration.variables]]
+display_label = "Soil Type"
+units = ""
+description = "For Stevens Probe"
+internal_name = "soiltype"
+
+[[chamber_configurations.soil_chamber_configuration.variables]]
+display_label = "Pump Speed"
+units = "%"
+description = "Circulation pump speed"
+internal_name = "speed"
+
+[[chamber_configurations.soil_chamber_configuration.variables]]
+display_label = "ID Tag"
+units = ""
+description = "Measurement ID"
+internal_name = "tag"
+
+[[chamber_configurations.soil_chamber_configuration.variables]]
+display_label = "Extra"
+units = "s"
+description = "Time between repetitions"
+internal_name = "textra"
+
+[[chamber_configurations.soil_chamber_configuration.variables]]
+display_label = "Rep duration"
+units = "s"
+description = "Time chamber is closed"
+internal_name = "tmax"
+
+[[chamber_configurations.soil_chamber_configuration.variables]]
+display_label = "Tsoil"
+units = ""
+description = "Sensor for TSoil"
+internal_name = "tss"
+
+
+# --- Instrument I/O Ports ---
+# This section groups variables related to the console's input/output ports.
+
+# Auxiliary User I/O Port Settings and Measurements
+[instrument_io_ports.auxiliary]
+source_table = "Table 4-6"
+section_title = "Settings and measurements associated with the Console USER I/O Port"
+description = "Configuration and readings for the console's auxiliary input/output port."
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label = "ADC_CH1"
+units = "V"
+description = "Spare channel 1"
+internal_name = "ADC_CH1"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label = "ADC_CH2"
+units = "V"
+description = "Spare channel 2"
+internal_name = "ADC_CH2"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label = "ADC_CH3"
+units = "V"
+description = "Spare channel 3"
+internal_name = "ADC_CH3"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label = "ADC_CH4"
+units = "V"
+description = "Spare channel 4"
+internal_name = "ADC_CH4"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label = "ADC_CH5"
+units = "V"
+description = "Spare channel 5"
+internal_name = "ADC_CH5"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label = "ADC_CH6"
+units = "V"
+description = "Spare channel 6"
+internal_name = "ADC_CH6"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label = "ADC_CH7"
+units = "V"
+description = "Spare channel 7"
+internal_name = "ADC_CH7"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label = "ADC_CH8"
+units = "V"
+description = "Spare channel 8"
+internal_name = "ADC_CH8"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label = "AuxPower"
+units = "V"
+description = "Auxiliary power setting (leaf chamber)"
+internal_name = "AuxPower"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label = "GPIO"
+units = ""
+description = "GPIO Status channels 8 through 1"
+internal_name = "GPIO"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label = "GPIO_dir"
+units = ""
+description = "GPIO Direction channels 8 through 1"
+internal_name = "GPIO_dir"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label = "ch1_pullup"
+units = ""
+description = "Pullup resistor for ADC_CH1"
+internal_name = "adc_ch1_pullup"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label = "DAC_1"
+units = "V"
+description = "D/A setting (-5 to +5V)"
+internal_name = "dac1"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label = "DAC_2"
+units = "V"
+description = "D/A setting (-5 to +5V)"
+internal_name = "dac2"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label="DAC_3"
+units="V"
+description="D/A setting (-5 to +5V)"
+internal_name="dac3"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label="DAC_4"
+units="V"
+description="D/A setting (-5 to +5V)"
+internal_name="dac4"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label="excit_5v"
+units=""
+description="5 V excitation line"
+internal_name="excitation_5v"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label="power_12v"
+units=""
+description="12 V power"
+internal_name="power_12v"
+
+[[instrument_io_ports.auxiliary.variables]]
+display_label="power_5v"
+units=""
+description="5 V power"
+internal_name="power_5v"
+
+
+# --- Console Components ---
+# This section groups variables related to components directly controlled by or attached to the console.
+
+# Console Light Source Settings
+[console_components.light_source]
+source_table = "Table 4-8"
+section_title = "Settings associated with the light source connected to the console (if any)"
+description = "Parameters and settings related to the integrated or external light source controlled by the console."
+
+[[console_components.light_source.variables]]
+display_label = "Pc"
+units = ""
+description = "Photodiode count"
+internal_name = "Pc"
+
+[[console_components.light_source.variables]]
+display_label = "Q"
+units = "µmol m-2 s-1"
+description = "Light Source output"
+internal_name = "Q"
+
+[[console_components.light_source.variables]]
+display_label = "Tled"
+units = "C"
+description = "LED tile temperature"
+internal_name = "TLEDTile"
+
+[[console_components.light_source.variables]]
+display_label = "f_red"
+units = ""
+description = "Fraction red"
+internal_name = "f_1"
+
+[[console_components.light_source.variables]]
+display_label = "f_green"
+units = ""
+description = "Fraction green"
+internal_name = "f_2"
+
+[[console_components.light_source.variables]]
+display_label = "f_blue"
+units = ""
+description = "Fraction blue"
+internal_name = "f_3"
+
+[[console_components.light_source.variables]]
+display_label = "f_white"
+units = ""
+description = "Fraction white"
+internal_name = "f_4"
+
+# Fluorometer Light Source Status and Readings
+[console_components.fluorometer_light_source]
+source_table = "Table 4-16"
+section_title = "Status and readings associated with the fluorometer light source"
+description = "Real-time operating parameters and measurements from the LI-6800 fluorometer's internal light source."
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "f_blue"
+units = ""
+description = "Fraction blue"
+internal_name = "BLUEFRAC"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "F_dc"
+units = ""
+description = "DC fluorescence"
+internal_name = "DC"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "f_farred"
+units = ""
+description = "Fraction farred"
+internal_name = "FARREDFRAC"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "F"
+units = ""
+description = "Demodulated fluorescence"
+internal_name = "FLUOR"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "Pc"
+units = ""
+description = "Photodiode count"
+internal_name = "PC"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "Q"
+units = "µmol m-2 s-1"
+description = "Fluorometer photon flux density"
+internal_name = "PFD"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "Q_blue"
+units = "µmol m-2 s-1"
+description = "Blue actinic contribution to Q"
+internal_name = "Q_blue"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "Q_farred"
+units = "µmol m-2 s-1"
+description = "Far red contribution to Q"
+internal_name = "Q_farred"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "Q_red"
+units = "µmol m-2 s-1"
+description = "Red actinic contribution to Q"
+internal_name = "Q_red"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "f_red"
+units = ""
+description = "Fraction red"
+internal_name = "REDFRAC"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "Q_modavg"
+units = "µmol m-2 s-1"
+description = "Modulated contribution to Q"
+internal_name = "REDMODAVG"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "TDigital"
+units = "°C"
+description = "Digital board temperature"
+internal_name = "TDigital"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "TDrive"
+units = "°C"
+description = "Driver temperature"
+internal_name = "TDrive"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "Tled"
+units = "°C"
+description = "LED tile temperature"
+internal_name = "TLEDTile"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "TPwrSpy"
+units = "°C"
+description = "Power supply temperature"
+internal_name = "TPowerSupply"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "TPreamp"
+units = "°C"
+description = "Preamp board temperature"
+internal_name = "TPreamp"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "TSPF"
+units = "s"
+description = "Time since previous flash"
+internal_name = "TSPF"
+
+[[console_components.fluorometer_light_source.variables]]
+display_label = "state"
+units = ""
+description = "0=Normal, 1=Rect, 2=MPF, 3=Ind, 4=Dark"
+internal_name = "state"
+
+# Head-Attached Light Source Settings
+[console_components.head_light_source]
+source_table = "Table 4-20"
+section_title = "Settings associated with the light source connected to the head (if any)"
+description = "Parameters and settings related to an external light source attached to the chamber head."
+
+[[console_components.head_light_source.variables]]
+display_label = "Pc"
+units = ""
+description = "Photodiode count"
+internal_name = "Pc"
+
+[[console_components.head_light_source.variables]]
+display_label = "Q"
+units = "µmol m-2 s-1"
+description = "Light Source output"
+internal_name = "Q"
+
+[[console_components.head_light_source.variables]]
+display_label = "Tled"
+units = "°C"
+description = "LED tile temperature"
+internal_name = "TLEDTile"
+
+[[console_components.head_light_source.variables]]
+display_label = "f_red"
+units = ""
+description = "Fraction red"
+internal_name = "f_1"
+
+[[console_components.head_light_source.variables]]
+display_label = "f_green"
+units = ""
+description = "Fraction green"
+internal_name = "f_2"
+
+[[console_components.head_light_source.variables]]
+display_label = "f_blue"
+units = ""
+description = "Fraction blue"
+internal_name = "f_3"
+
+[[console_components.head_light_source.variables]]
+display_label = "f_white"
+units = ""
+description = "Fraction white"
+internal_name = "f_4"
+
+
+# --- Console Status ---
+# This section holds general operational status values and measurements for the LI-6800 console.
+
+# Console and System Status Values
+[console_status.measurements]
+source_table = "Table 4-9, Table 4-38, Table 4-39"
+section_title = "Console and System Status Values"
+description = "Real-time readings and indicators of the console's internal systems, and primary/secondary status information on the overall system state."
+
+[[console_status.measurements.variables]]
+display_label = "CO2_f"
+units = "V"
+description = "CO2 Injector flow"
+internal_name = "CO2_FLOW"
+
+[[console_status.measurements.variables]]
+display_label = "CO2_f_s"
+units = "V"
+description = "CO2 Injector status"
+internal_name = "CO2_FLOW_STATUS"
+
+[[console_status.measurements.variables]]
+display_label = "Pump_f"
+units = "V"
+description = "Pump flow"
+internal_name = "PUMP_FLOW"
+
+[[console_status.measurements.variables]]
+display_label = "Pump_f_s"
+units = "V"
+description = "Pump status"
+internal_name = "PUMP_FLOW_STATUS"
+
+[[console_status.measurements.variables]]
+display_label = "Pump_p"
+units = "V"
+description = "Pump pressure flow"
+internal_name = "PUMP_PRESSURE"
+
+[[console_status.measurements.variables]]
+display_label = "Pump_p_s"
+units = "V"
+description = "Pump pressure status"
+internal_name = "PUMP_PRESSURE_STATUS"
+
+[[console_status.measurements.variables]]
+display_label = "V_system"
+units = "V"
+description = "System voltage"
+internal_name = "SYSTEM_VOLTAGE"
+
+[[console_status.measurements.variables]]
+display_label = "Tboard"
+units = "C"
+description = "Console board temperature"
+internal_name = "TEMPERATURE"
+
+[[console_status.measurements.variables]]
+display_label = "CO2_%"
+units = "%"
+description = "CO2 injector amount on"
+internal_name = "CO2_percent"
+
+[[console_status.measurements.variables]]
+display_label = "CO2_r_sp"
+units = "µmol mol-1"
+description = "CO2 mixer algorithmic setpoint"
+internal_name = "CO2_r_setpoint"
+
+[[console_status.measurements.variables]]
+display_label = "DIAG"
+units = ""
+description = "Head diagnostic value. Normal = 2 or 3"
+internal_name = "DIAG"
+
+[[console_status.measurements.variables]]
+display_label = "Desiccant_%"
+units = "%"
+description = "Desiccant valve position"
+internal_name = "Desiccant_percent"
+
+[[console_status.measurements.variables]]
+display_label = "Flow_r"
+units = "µmol s-1"
+description = "Ref cell flow"
+internal_name = "Flow_r"
+
+[[console_status.measurements.variables]]
+display_label = "Flow_s"
+units = "µmol s-1"
+description = "Sample cell flow"
+internal_name = "Flow_s"
+
+[[console_status.measurements.variables]]
+display_label = "H2O_r_sp"
+units = "mmol mol-1"
+description = "H2O algorithmic setpoint"
+internal_name = "H2O_r_setpoint"
+
+[[console_status.measurements.variables]]
+display_label = "Txchg_sp"
+units = "°C"
+description = "Heat exchange algorithmic setpoint"
+internal_name = "Heatx_setpoint"
+
+[[console_status.measurements.variables]]
+display_label = "Humidifier_%"
+units = "%"
+description = "Humidifier valve position"
+internal_name = "Humidifier_percent"
+
+[[console_status.measurements.variables]]
+display_label = "SS_s"
+units = "%"
+description = "Sample cell signal strength"
+internal_name = "SS_a"
+
+[[console_status.measurements.variables]]
+display_label = "SS_r"
+units = "%"
+description = "Reference cell signal strength"
+internal_name = "SS_b"
+
+[[console_status.measurements.variables]]
+display_label = "Ts"
+units = "°C"
+description = "A cell inlet temperature"
+internal_name = "Ta"
+
+[[console_status.measurements.variables]]
+display_label = "Tr"
+units = "°C"
+description = "B cell inlet temperature"
+internal_name = "Tb"
+
+[[console_status.measurements.variables]]
+display_label = "Tchopper"
+units = "°C"
+description = "IRGA chopper temperature"
+internal_name = "Tchopper"
+
+[[console_status.measurements.variables]]
+display_label = "Tirga"
+units = "°C"
+description = "IRGA block temperature"
+internal_name = "Tirga_block"
+
+[[console_status.measurements.variables]]
+display_label = "Txchg"
+units = "°C"
+description = "Heat exchanger temperature"
+internal_name = "Txchg"
+
+[[console_status.measurements.variables]]
+display_label = "AccCO2_soda"
+units = "mg"
+description = "Absorbed CO2 (mg) by soda lime"
+internal_name = "AccCO2_soda"
+
+[[console_status.measurements.variables]]
+display_label = "AccH2O_des"
+units = "mg"
+description = "Absorbed H2O (mg) by desiccant"
+internal_name = "AccH2O_des"
+
+[[console_status.measurements.variables]]
+display_label = "AccH2O_hum"
+units = "mg"
+description = "Added H2O (mg) from humidifier"
+internal_name = "AccH2O_hum"
+
+[[console_status.measurements.variables]]
+display_label = "CO2_hrs"
+units = "hrs"
+description = "CO2 cartridge hours"
+internal_name = "CO2_hrs"
+
+[[console_status.measurements.variables]]
+display_label = "Console_H2O"
+units = "mmol mol-1"
+description = "H2O after humidifier"
+internal_name = "Console_H2O"
+
+[[console_status.measurements.variables]]
+display_label = "Console_RH"
+units = "%"
+description = "RH after humidifier"
+internal_name = "Console_RH"
+
+[[console_status.measurements.variables]]
+display_label = "Console_T"
+units = "°C"
+description = "T after humidifier"
+internal_name = "Console_RH_T"
+
+[[console_status.measurements.variables]]
+display_label = "Fan_%"
+units = "%"
+description = "Fan speed in percent"
+internal_name = "Fan_percent"
+
+[[console_status.measurements.variables]]
+display_label = "Flow_%"
+units = "%"
+description = "Flow split position, -100 to +100"
+internal_name = "Flow_percent"
+
+[[console_status.measurements.variables]]
+display_label = "Pump"
+units = ""
+description = "Pump status: 0=off, 0.5=min, 1=low, 2=med, 3=high"
+internal_name = "Pump"
+
+[[console_status.measurements.variables]]
+display_label = "Tleaf_j"
+units = "°C"
+internal_name = "TleafJunction"
+description = "Tleaf junction temp"
+
+[[console_status.measurements.variables]]
+display_label = "Tleaf2_j"
+units = "°C"
+internal_name = "TleafJunction2"
+description = "Tleaf2 junction temp"
+
+[[console_status.measurements.variables]]
+display_label = "Tchp_pwm"
+units = "V"
+description = "Chopper temp PWM in V"
+internal_name = "chopper_t_pwm_v"
+
+[[console_status.measurements.variables]]
+display_label = "diag_12v"
+units = "V"
+description = "12v V test point"
+internal_name = "diag_12v"
+
+[[console_status.measurements.variables]]
+display_label = "diag_20v"
+units = "V"
+description = "20v V test point"
+internal_name = "diag_20v"
+
+[[console_status.measurements.variables]]
+display_label = "diag_3_3vf"
+units = "V"
+description = "3.3vf V test point"
+internal_name = "diag_3_3vf"
+
+[[console_status.measurements.variables]]
+display_label = "diag_5_4v"
+units = "V"
+description = "5.4v V test point"
+internal_name = "diag_5_4v"
+
+[[console_status.measurements.variables]]
+display_label = "diag_5va"
+units = "V"
+description = "5va V test point"
+internal_name = "diag_5va"
+
+[[console_status.measurements.variables]]
+display_label = "Txchg_pwm"
+units = "V"
+description = "Heat exchanger temp PWM in V"
+internal_name = "heatx_t_pwm_v"
+
+# System values associated with the latest logged observation
+[console_status.system_observation_metadata]
+source_table = "Table 4-41"
+section_title = "System values associated with the latest logged observation"
+description = "Metadata and timestamps pertaining to the instrument's logging of observations."
+
+[[console_status.system_observation_metadata.variables]]
+display_label = "averaging"
+units = "s"
+description = "Additional averaging on latest observation"
+internal_name = "averaging"
+
+[[console_status.system_observation_metadata.variables]]
+display_label = "date"
+units = ""
+description = "Date & time of last observation"
+internal_name = "date"
+
+[[console_status.system_observation_metadata.variables]]
+display_label = "elapsed"
+units = "s"
+description = "Seconds since first observation"
+internal_name = "elapsed"
+
+[[console_status.system_observation_metadata.variables]]
+display_label = "hhmmss"
+units = ""
+description = "HH:MM:SS of last observation"
+internal_name = "hhmmss"
+
+[[console_status.system_observation_metadata.variables]]
+display_label = "obs"
+units = ""
+description = "Number observations logged"
+internal_name = "obs"
+
+[[console_status.system_observation_metadata.variables]]
+display_label = "time"
+units = "s"
+description = "Seconds since Jan 1970"
+internal_name = "time"
+
+
+# --- Computational Constants ---
+# This section defines constants used in calculations and models, often configured by the user.
+
+# Gas Exchange Computation Constants
+[computational_constants.gas_exchange]
+source_table = "Table 4-10"
+section_title = "Constants for typical gas exchange measurements"
+description = "Constants used in gas exchange computations, which may depend on the chamber setup."
+
+[[computational_constants.gas_exchange.variables]]
+display_label = "Custom"
+units = "mol m-2 s-1"
+description = "1-sided BLC"
+internal_name = "CustomBLC"
+
+[[computational_constants.gas_exchange.variables]]
+display_label = "Geometry"
+units = ""
+description = "Used for boundary layer conductance (BLC)"
+internal_name = "Geometry"
+
+[[computational_constants.gas_exchange.variables]]
+display_label = "K"
+units = ""
+description = "Stomatal ratio"
+internal_name = "K"
+
+[[computational_constants.gas_exchange.variables]]
+display_label = "S"
+units = "cm2"
+description = "Leaf area"
+internal_name = "S"
+
+# Aquatic Chamber Specific Computational Constants
+[computational_constants.aquatic_chamber]
+source_table = "Table 4-11"
+section_title = "Constants for the aquatic chamber"
+description = "Constants specific to calculations and analyses within the aquatic chamber."
+
+[[computational_constants.aquatic_chamber.variables]]
+display_label = "Dcell"
+units = "cells ml-1"
+description = "Algal cell density"
+internal_name = "Dcell"
+
+[[computational_constants.aquatic_chamber.variables]]
+display_label = "Dchl"
+units = "µg ml-1"
+description = "Chlorophyll density"
+internal_name = "Dchl"
+
+[[computational_constants.aquatic_chamber.variables]]
+display_label = "Dmass"
+units = "mg ml-1"
+description = "Algal mass density"
+internal_name = "Dmass"
+
+[[computational_constants.aquatic_chamber.variables]]
+display_label = "Volume"
+units = "ml"
+description = "Sample volume"
+internal_name = "V"
+
+# Leak Correction Constants
+[computational_constants.leak_correction_constants]
+source_table = "Table 4-22"
+section_title = "Constants associated with the leak correction"
+description = "Calibration coefficients and parameters used in the leak correction model."
+
+[[computational_constants.leak_correction_constants.variables]]
+display_label = "Fs_meas"
+units = "µmol s-1"
+description = "Flow_s_adjust table, vector of measured values"
+internal_name = "Fs_meas"
+
+[[computational_constants.leak_correction_constants.variables]]
+display_label = "Fs_true"
+units = "µmol s-1"
+description = "Flow_s adjust table, vector of true values"
+internal_name = "Fs_true"
+
+[[computational_constants.leak_correction_constants.variables]]
+display_label = "fan_a"
+units = "µmol s-1"
+description = "Fanflow cal coeff"
+internal_name = "fan_a"
+
+[[computational_constants.leak_correction_constants.variables]]
+display_label = "fan_b"
+units = "µmol s-1/rpm"
+description = "Fanflow cal coeff"
+internal_name = "fan_b"
+
+[[computational_constants.leak_correction_constants.variables]]
+display_label = "fan_c"
+units = "1/rpm"
+description = "Fanflow cal coeff"
+internal_name = "fan_c"
+
+[[computational_constants.leak_correction_constants.variables]]
+display_label = "fan_d"
+units = "K/kPa"
+description = "Fanflow cal coeff"
+internal_name = "fan_d"
+
+[[computational_constants.leak_correction_constants.variables]]
+display_label = "leak_wt"
+units = ""
+description = "Leak weighting factor"
+internal_name = "leak_wt"
+
+# Leaf Light Related Constants
+[computational_constants.leaf_light_constants]
+source_table = "Table 4-24" # Combined with Table 4-32 QConst
+section_title = "Leaf related constants and light weighting factors associated with the LeafQ computations"
+description = "Parameters defining leaf optical properties, light conversion factors, and weighting factors for different light sources, used in LeafQ computations."
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label = "Ambient"
+units = ""
+description = "Ambient light identifier"
+internal_name = "Ambient"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label = "Leaf"
+units = ""
+description = "Leaf type identifier"
+internal_name = "Leaf"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label = "abs_ambient"
+units = ""
+description = "Leaf PAR absorptance for ambient"
+internal_name = "abs_ambient"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label = "abs_blueFlr"
+units = ""
+description = "Leaf PAR absorptance for blueFlr"
+internal_name = "abs_blueFlr"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label = "abs_blueLED"
+units = ""
+description = "Leaf PAR absorptance for blueLED"
+internal_name = "abs_blueLED"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label = "abs_greenLED"
+units = ""
+internal_name="abs_greenLED"
+description="Leaf PAR absorptance for greenLED"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="abs_redFlr"
+units=""
+description="Leaf PAR absorptance for redFlr"
+internal_name="abs_redFlr"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="abs_redLED"
+units=""
+description="Leaf PAR absorptance for redLED"
+internal_name="abs_redLED"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="abs_whiteLED"
+units=""
+description="Leaf PAR absorptance for whiteLED"
+internal_name="abs_whiteLED"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="k_ambient"
+units="J/µmol"
+description="Converts Qin to Rabs for ambient"
+internal_name="k_ambient"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="k_blueFlr"
+units="J/µmol"
+description="Converts Qin to Rabs for blueFlr"
+internal_name="k_blueFlr"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="k_blueLED"
+units="J/µmol"
+description="Converts Qin to Rabs for blueLED"
+internal_name="k_blueLED"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="k_greenLED"
+units="J/µmol"
+description="Converts Qin to Rabs for greenLED"
+internal_name="k_greenLED"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="k_redFlr"
+units="J/µmol"
+description="Converts Qin to Rabs for redFlr"
+internal_name="k_redFlr"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="k_redLED"
+units="J/µmol"
+description="Converts Qin to Rabs for redLED"
+internal_name="k_redLED"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="k_whiteLED"
+units="J/µmol"
+description="Converts Qin to Rabs for whiteLED"
+internal_name="k_whiteLED"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="fQ_Amb_in"
+units=""
+description="Fraction Q from Amb_in"
+internal_name="fQ_Amb_in"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="fQ_Amb_out"
+units=""
+description="Fraction Q from Amb_out"
+internal_name="fQ_Amb_out"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="fQ_ConsoleLS"
+units=""
+description="Fraction Q from ConsoleLS"
+internal_name="fQ_ConsoleLS"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="fQ_Flr"
+units=""
+description="Fraction Q from Flr"
+internal_name="fQ_Flr"
+
+[[computational_constants.leaf_light_constants.variables]]
+display_label="fQ_HeadLS"
+units=""
+description="Fraction Q from HeadLS"
+internal_name="fQ_HeadLS"
+
+# Leaf Temperature Constants
+[computational_constants.leaf_temperature_constants]
+source_table = "Table 4-25"
+section_title = "Constants associated with determining the temperature used for stomatal conductance"
+description = "Parameters used in models for calculating leaf temperature relevant to stomatal conductance."
+
+[[computational_constants.leaf_temperature_constants.variables]]
+display_label = "deltaTw"
+units = "°C"
+description = "Wall-air temp difference"
+internal_name = "deltaTw"
+
+[[computational_constants.leaf_temperature_constants.variables]]
+display_label = "fT1"
+units = ""
+description = "Fraction Tleaf"
+internal_name = "fT1"
+
+[[computational_constants.leaf_temperature_constants.variables]]
+display_label = "fT2"
+units = ""
+description = "Fraction Tleaf2"
+internal_name = "fT2"
+
+[[computational_constants.leaf_temperature_constants.variables]]
+display_label = "fT3"
+units = ""
+description = "Fraction TleafEB"
+internal_name = "fTeb"
+
+# Aquatic Chamber pH Calibration Constants
+[computational_constants.aquatic_chamber_pH_calibration]
+source_table = "Table 4-31"
+section_title = "Constants and settings associated with the Aquatic Chamber pH probe"
+description = "Calibration parameters and settings for the aquatic chamber pH sensor."
+
+[[computational_constants.aquatic_chamber_pH_calibration.variables]]
+display_label = "Cal 1 T"
+units = "°C"
+description = "Buffer temperature"
+internal_name = "cal1_T"
+
+[[computational_constants.aquatic_chamber_pH_calibration.variables]]
+display_label = "Cal 1 Signal"
+units = "V"
+description = "Buffer signal"
+internal_name = "cal1_V"
+
+[[computational_constants.aquatic_chamber_pH_calibration.variables]]
+display_label = "Use Cal 1"
+units = ""
+description = ""
+internal_name = "cal1_on"
+
+[[computational_constants.aquatic_chamber_pH_calibration.variables]]
+display_label = "Cal 1 pH"
+units = "pH"
+description = "Buffer pH"
+internal_name = "cal1_pH"
+
+[[computational_constants.aquatic_chamber_pH_calibration.variables]]
+display_label = "Cal 2 T"
+units = "°C"
+description = "Buffer temperature"
+internal_name = "cal2_T"
+
+[[computational_constants.aquatic_chamber_pH_calibration.variables]]
+display_label = "Cal 2 Signal"
+units = "V"
+description = "Buffer signal"
+internal_name = "cal2_V"
+
+[[computational_constants.aquatic_chamber_pH_calibration.variables]]
+display_label = "Use Cal 2"
+units = ""
+description = ""
+internal_name = "cal2_on"
+
+[[computational_constants.aquatic_chamber_pH_calibration.variables]]
+display_label = "Cal 2 pH"
+units = "pH"
+description = "Buffer pH"
+internal_name = "cal2_pH"
+
+[[computational_constants.aquatic_chamber_pH_calibration.variables]]
+display_label = "Cal Factor"
+units = ""
+description = "Probe calibration adjustment factor"
+internal_name = "slope"
+
+[[computational_constants.aquatic_chamber_pH_calibration.variables]]
+display_label = "Cal 0 Signal"
+units = "V"
+description = "Signal at neutral pH"
+internal_name = "std_V"
+
+[[computational_constants.aquatic_chamber_pH_calibration.variables]]
+display_label = "Cal 0 pH"
+units = ""
+description = "Neutral pH"
+internal_name = "std_pH"
+
+# Computational constants for the soil chamber
+[computational_constants.soil_chamber_computational_constants]
+source_table = "Table 4-35"
+section_title = "Computational constants for the soil chamber"
+description = "Parameters and volumes used in calculations specific to the soil respiration chamber."
+
+[[computational_constants.soil_chamber_computational_constants.variables]]
+display_label = "Vcham"
+units = "cm3"
+description = "Chamber volume"
+internal_name = "ChamberVolume"
+
+[[computational_constants.soil_chamber_computational_constants.variables]]
+display_label = "Offset"
+units = "cm"
+description = "Collar height"
+internal_name = "CollarHt"
+
+[[computational_constants.soil_chamber_computational_constants.variables]]
+display_label = "Ctarget"
+units = "µmol mol-1"
+description = "Compute flux here"
+internal_name = "Ctarget"
+
+[[computational_constants.soil_chamber_computational_constants.variables]]
+display_label = "Area"
+units = "cm2"
+description = "Exposed soil area"
+internal_name = "SoilArea"
+
+[[computational_constants.soil_chamber_computational_constants.variables]]
+display_label = "Virga"
+units = "cm3"
+description = "Non-chamber Volume"
+internal_name = "SysVolume"
+
+[[computational_constants.soil_chamber_computational_constants.variables]]
+display_label = "Vtotal"
+units = "cm3"
+description = "System volume + collar volume"
+internal_name = "TotalVolume"
+
+# System constants associated with head computations
+[computational_constants.system_computational_constants]
+source_table = "Table 4-42"
+section_title = "System constants associated with the head computations"
+description = "General system parameters influencing calculations, often related to the instrument's overall operation rather than specific chamber types."
+
+[[computational_constants.system_computational_constants.variables]]
+display_label = "AvgTime"
+units = "sec"
+description = "Averaging time for head measurements"
+internal_name = "AvgTime"
+
+[[computational_constants.system_computational_constants.variables]]
+display_label = "Oxygen"
+units = "%"
+description = "Oxygen concentration"
+internal_name = "Oxygen"
+
+# User Defined Constants
+[computational_constants.user_defined_constants]
+source_table = "Table 4-43"
+section_title = "User defined constants"
+description = "Custom constants configured by the user, whose content varies based on user input."
+
+[[computational_constants.user_defined_constants.variables]]
+display_label = "myConstant"
+units = "km"
+description = "Distance from the sun"
+internal_name = "myConstant"
+
+
+# --- Computed Results ---
+# This section contains variables representing the outputs of various calculations and models.
+
+# Dynamic Assimilation and Transpiration Computations
+[computed_results.dynamic]
+source_table = "Table 4-12"
+section_title = "Computations associated with dynamic assimilation and transpiration"
+description = "Results from dynamic gas exchange calculations, including rates of change and effective volumes."
+
+[[computed_results.dynamic.variables]]
+display_label = "Adyn"
+units = "µmol m-2 s-1"
+description = "Assimilation via dynamic method"
+internal_name = "Adyn"
+
+[[computed_results.dynamic.variables]]
+display_label = "Crd"
+units = "µmol mol-1"
+description = "CO2 ref, dry equivalent, time lag adjusted"
+internal_name = "Crd"
+
+[[computed_results.dynamic.variables]]
+display_label = "Csd"
+units = "µmol mol-1"
+description = "CO2 sample, dry equivalent, from regression"
+internal_name = "Csd"
+
+[[computed_results.dynamic.variables]]
+display_label = "Edyn"
+units = "mmol m-2 s-1"
+description = "Transpiration via dynamic method"
+internal_name = "Edyn"
+
+[[computed_results.dynamic.variables]]
+display_label = "Hr"
+units = "mmol mol-1"
+description = "H2O ref, time lag adjusted"
+internal_name = "Hr"
+
+[[computed_results.dynamic.variables]]
+display_label = "Hs"
+units = "mmol mol-1"
+description = "H2O sample, from regression"
+internal_name = "Hs"
+
+[[computed_results.dynamic.variables]]
+display_label = "αVc"
+units = "cm3"
+description = "Effective CO2 Volume"
+internal_name = "αVc"
+
+[[computed_results.dynamic.variables]]
+display_label = "αVh"
+units = "cm3"
+description = "Effective H2O Volume"
+internal_name = "αVh"
+
+[[computed_results.dynamic.variables]]
+display_label = "dCsd/dt"
+units = "µmol mol-1 s-1"
+description = "Rate of change of Csd"
+internal_name = "dCsd/dt"
+
+[[computed_results.dynamic.variables]]
+display_label = "dHs/dt"
+units = "mmol mol-1 s-1"
+description = "Rate of change of Hs"
+internal_name = "dHs/dt"
+
+# Induction Flash Computations
+[computed_results.induction_flash]
+source_table = "Table 4-14"
+section_title = "Computations from the latest induction flash"
+description = "Calculated parameters derived from the fluorescence induction flash measurement."
+
+[[computed_results.induction_flash.variables]]
+display_label = "Duration"
+units = "ms"
+description = "Flash duration"
+internal_name = "DURATION"
+
+[[computed_results.induction_flash.variables]]
+display_label = "ID"
+units = ""
+description = "ID of this INDUCTION flash"
+internal_name = "EVENT_ID"
+
+[[computed_results.induction_flash.variables]]
+display_label = "F1"
+units = ""
+description = "First inflection"
+internal_name = "F1"
+
+[[computed_results.induction_flash.variables]]
+display_label = "F2"
+units = ""
+description = "Second inflection"
+internal_name = "F2"
+
+[[computed_results.induction_flash.variables]]
+display_label = "Fmax"
+units = ""
+description = "Max F during flash"
+internal_name = "FMAX"
+
+[[computed_results.induction_flash.variables]]
+display_label = "Fo"
+units = ""
+description = "F before flash"
+internal_name = "Fo"
+
+[[computed_results.induction_flash.variables]]
+display_label = "T@F1"
+units = "s"
+description = "Time of F1"
+internal_name = "T@F1"
+
+[[computed_results.induction_flash.variables]]
+display_label = "T@F2"
+units = "s"
+description = "Time of F2"
+internal_name = "T@F2"
+
+[[computed_results.induction_flash.variables]]
+display_label = "T@Fmax"
+units = "s"
+description = "Time of Fmax"
+internal_name = "T@Fmax"
+
+[[computed_results.induction_flash.variables]]
+display_label = "T@HIR"
+units = "s"
+description = "Time of half the initial rise"
+internal_name = "T@HIR"
+
+# Fluorometer Computations
+[computed_results.fluorometer_computations]
+source_table = "Table 4-15"
+section_title = "Fluorometer computations, updated after every flash and/or dark event"
+description = "Real-time fluorescence parameters calculated from flash and dark events, for photosynthetic analysis."
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "1-qL"
+units = ""
+description = "1-qL"
+internal_name = "1-qL"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "Flux*_fs"
+units = "µmol s-1"
+description = "Flux at Fs"
+internal_name = "A"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "Flux*_d"
+units = "µmol s-1"
+description = "Dark assimilation rate before Fm"
+internal_name = "Adark"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "DarkAdaptedID"
+units = ""
+description = "ID of latest dark-adapted flash"
+internal_name = "DarkAdaptedID"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "DarkPulseID"
+units = ""
+description = "ID of latest dark pulse"
+internal_name = "DarkPulseID"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "ETR"
+units = "µmol s-1"
+description = "Electron transport rate"
+internal_name = "ETR"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "Fm"
+units = ""
+description = "Maximal F, dark adapted"
+internal_name = "Fm"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "Fmin"
+units = ""
+description = "Measured minimal F, light adapted"
+internal_name = "Fmin"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "Fm’"
+units = ""
+description = "Maximal F, light adapted"
+internal_name = "Fmp"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "Fo"
+units = ""
+description = "Minimal F, dark adapted"
+internal_name = "Fo"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "Fo’"
+units = ""
+description = "Minimal F, light adapted"
+internal_name = "Fop"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "Fs"
+units = ""
+description = "Steady state F"
+internal_name = "Fs"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "Fv/Fm"
+units = ""
+description = "1-Fo/Fm"
+internal_name = "Fv/Fm"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "Fv’/Fm’"
+units = ""
+description = "1-Fo’/Fm’"
+internal_name = "Fvp/Fmp"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "LightAdaptedID"
+units = ""
+description = "ID of latest light-adapted flash"
+internal_name = "LightAdaptedID"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "NPQ"
+units = ""
+description = "(Fm-Fm’)/Fm’"
+internal_name = "NPQ"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "PS2/1"
+units = ""
+description = "Ratio PS2 to PS1"
+internal_name = "PS2/1"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "PhiCO2"
+units = "µmol µmol-1"
+description = "(A-Ao)/Qabs"
+internal_name = "PhiCO2"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "PhiPS2"
+units = ""
+description = "1-Fs/Fm’"
+internal_name = "PhiPS2"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "Qabs*_fs"
+units = "µmol s-1"
+description = "Quanta/s absorbed at Fs"
+internal_name = "Qabs"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "Qmax"
+units = ""
+description = "QMax for latest light adapted flash"
+internal_name = "Qmax"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "Qmax_d"
+units = ""
+description = "QMax for latest dark adapted flash"
+internal_name = "Qmax_d"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "alt. Fo’"
+units = ""
+description = "Alternative Fo’ = Fo/(Fv/Fm+Fo/Fm’)"
+internal_name = "aFop"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "qL"
+units = ""
+description = "qP Fo’/Fs"
+internal_name = "qL"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "qN"
+units = ""
+description = "(Fm-Fm’)/(Fm-Fo’)"
+internal_name = "qN"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "qN_Fo"
+units = ""
+description = "(Fm-Fm’)/(Fm-Fo)"
+internal_name = "qN_Fo"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "qP"
+units = ""
+description = "(Fm’-Fs)/(Fm’-Fo’)"
+internal_name = "qP"
+
+[[computed_results.fluorometer_computations.variables]]
+display_label = "qP_Fo"
+units = ""
+description = "(Fm’-Fs)/(Fm’-Fo)"
+internal_name = "qP_Fo"
+
+# Fluorometer Signal Statistics
+[computed_results.fluorometer_statistics]
+source_table = "Table 4-17"
+section_title = "Statistics on the fluorometer’s modulated fluorescence signal"
+description = "Statistical parameters derived from the modulated fluorescence signal, indicating signal stability and changes."
+
+[[computed_results.fluorometer_statistics.variables]]
+display_label = "F_avg"
+units = ""
+description = "Average F"
+internal_name = "F_avg"
+
+[[computed_results.fluorometer_statistics.variables]]
+display_label = "F_dc_avg"
+units = ""
+description = "Average F_dc"
+internal_name = "F_dc_avg"
+
+[[computed_results.fluorometer_statistics.variables]]
+display_label = "dF/dt"
+units = "min-1"
+description = "Rate of change of F"
+internal_name = "dF_dt"
+
+[[computed_results.fluorometer_statistics.variables]]
+display_label = "dF_dc/dt"
+units = "min-1"
+description = "Rate of change of F_dc"
+internal_name = "dF_dc_dt"
+
+[[computed_results.fluorometer_statistics.variables]]
+display_label = "period"
+units = "s"
+description = "Period for stats"
+internal_name = "period"
+
+# Standard Gas Exchange Computations
+[computed_results.gas_exchange_standard]
+source_table = "Table 4-18"
+section_title = "Example for normal gas exchange computations"
+description = "Standard physiological parameters calculated from gas exchange measurements, varying with chamber setup."
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "A"
+units = "µmol m-2 s-1"
+description = "Assimilation rate"
+internal_name = "A"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "Ca"
+units = "µmol mol-1"
+description = "Ambient (to leaf) CO2"
+internal_name = "Ca"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "Ci"
+units = "µmol mol-1"
+description = "Intercellular CO2"
+internal_name = "Ci"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "E"
+units = "mol m-2 s-1"
+description = "Transpiration rate"
+internal_name = "E"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "EBSum"
+units = "W m-2"
+description = "Sum of energy balance components"
+internal_name = "EBSum"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "Emm"
+units = "mmol m-2 s-1"
+description = "Transpiration rate"
+internal_name = "Emm"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "LatHFlux"
+units = "W m-2"
+description = "Latent Heat Flux"
+internal_name = "LatHFlux"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "NetTherm"
+units = "W m-2"
+description = "Net Thermal"
+internal_name = "NetTherm"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "Pca"
+units = "Pa"
+description = "Ambient (to leaf) CO2"
+internal_name = "Pca"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "Pci"
+units = "Pa"
+description = "Intercellular CO2"
+internal_name = "Pci"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "RHcham"
+units = "%"
+description = "Relative humidity in the chamber"
+internal_name = "RHcham"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "Rabs"
+units = "W m-2"
+description = "Absorbed short wave radiation"
+internal_name = "Rabs"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "SVPcham"
+units = "kPa"
+description = "Saturation vapor pressure in the chamber"
+internal_name = "SVPcham"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "SVPleaf"
+units = "kPa"
+description = "Saturation vapor pressure at leaf temp"
+internal_name = "SVPleaf"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "SenHFlux"
+units = "W m-2"
+description = "Sensible Heat Flux"
+internal_name = "SenHFlux"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "TIME"
+units = "s"
+description = "Seconds since Jan 1970"
+internal_name = "TIME"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "TleafCnd"
+units = "°C"
+description = "Leaf temperature used for gas exchange computations"
+internal_name = "TleafCnd"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "TleafEB"
+units = "°C"
+description = "Leaf temperature from energy balance"
+internal_name = "TleafEB"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label = "VPDleaf"
+units = "kPa"
+description="Vapor pressure deficit at leaf temp"
+internal_name="VPDleaf"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label="VPcham"
+units="kPa"
+description="Vapor pressure in the chamber"
+internal_name="VPcham"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label="gbw"
+units="mol m-2 s-1"
+description="Boundary layer conductance to water vapor"
+internal_name="gbw"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label="gsw"
+units="mol m-2 s-1"
+description="Stomatal conductance to water vapor"
+internal_name="gsw"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label="gtc"
+units="mol m-2 s-1"
+description="Total conductance to CO2"
+internal_name="gtc"
+
+[[computed_results.gas_exchange_standard.variables]]
+display_label="gtw"
+units="mol m-2 s-1"
+description="Total conductance to water vapor"
+internal_name="gtw"
+
+# Aquatic Chamber Gas Exchange Computations
+[computed_results.gas_exchange_aquatic_chamber]
+source_table = "Table 4-19"
+section_title = "Example for the Aquatic Chamber"
+description = "Gas exchange computations specific to the aquatic chamber environment."
+
+[[computed_results.gas_exchange_aquatic_chamber.variables]]
+display_label = "Flux*"
+units = "µmol s-1"
+description = "Carbon flow"
+internal_name = "A"
+
+[[computed_results.gas_exchange_aquatic_chamber.variables]]
+display_label = "Flux_cell"
+units = "µmol cell-1 s-1"
+description = "Algal cell flux"
+internal_name = "Acell"
+
+[[computed_results.gas_exchange_aquatic_chamber.variables]]
+display_label = "Flux_chl"
+units = "µmol µg-1 s-1"
+description = "Chlorophyll based flux"
+internal_name = "Achl"
+
+[[computed_results.gas_exchange_aquatic_chamber.variables]]
+display_label = "Flux_mass"
+units = "µmol mg-1 s-1"
+description = "Algal mass flux"
+internal_name = "Amass"
+
+[[computed_results.gas_exchange_aquatic_chamber.variables]]
+display_label = "TIME"
+units = "s"
+description = "Seconds since Jan 1970"
+internal_name = "TIME"
+
+[[computed_results.gas_exchange_aquatic_chamber.variables]]
+display_label = "Taq"
+units = "°C"
+description = "Aquatic chamber temp"
+internal_name = "Taq"
+
+[[computed_results.gas_exchange_aquatic_chamber.variables]]
+display_label = "pH"
+units = ""
+description = "Aquatic chamber pH"
+internal_name = "pH"
+
+[[computed_results.gas_exchange_aquatic_chamber.variables]]
+display_label = "pH Signal"
+units = "V"
+description = "Aquatic chamber pH probe signal"
+internal_name = "pH_V"
+
+# Leak Correction Computations
+[computed_results.leak_correction_results]
+source_table = "Table 4-21"
+section_title = "Computations associated with the leak correction"
+description = "Calculated metrics related to environmental control and leakage within the chamber."
+
+[[computed_results.leak_correction_results.variables]]
+display_label = "Fan"
+units = "µmol s-1"
+description = "Estimated mixing fan flow"
+internal_name = "Fan"
+
+[[computed_results.leak_correction_results.variables]]
+display_label = "Leak"
+units = "µmol s-1"
+description = "Leakage from chamber"
+internal_name = "Leak"
+
+[[computed_results.leak_correction_results.variables]]
+display_label = "CorrFact"
+units = ""
+description = "Leak correction factor"
+internal_name = "LeakK"
+
+[[computed_results.leak_correction_results.variables]]
+display_label = "CorrFactPct"
+units = "%"
+description = "Leak correction factor as percent"
+internal_name = "LeakPE"
+
+[[computed_results.leak_correction_results.variables]]
+display_label = "LeakPct"
+units = "%"
+description = "Leakage as percent of flow"
+internal_name = "LeakPct"
+
+# Leaf Light Computations
+[computed_results.leaf_light_computations]
+source_table = "Table 4-23"
+section_title = "Light computations associated with a leaf in the chamber"
+description = "Calculated light parameters relevant to the leaf within the chamber."
+
+[[computed_results.leaf_light_computations.variables]]
+display_label = "Qabs"
+units = "µmol m-2 s-1"
+description = "PPFD absorbed by the leaf"
+internal_name = "Qabs"
+
+[[computed_results.leaf_light_computations.variables]]
+display_label = "Qin"
+units = "µmol m-2 s-1"
+description = "PPFD incident on the leaf"
+internal_name = "Qin"
+
+[[computed_results.leaf_light_computations.variables]]
+display_label = "alpha"
+units = ""
+description = "Weighted leaf absorption"
+internal_name = "alpha"
+
+[[computed_results.leaf_light_computations.variables]]
+display_label = "convert"
+units = "J/µmol"
+description = "Weighted conversion from PPFD to W/m2"
+internal_name = "convert"
+
+# Match Event Results
+[computed_results.match_event_results]
+source_table = "Table 4-26"
+section_title = "Results associated with the latest point match event"
+description = "Metrics and timestamps related to the instrument's gas analyzer matching process."
+
+[[computed_results.match_event_results.variables]]
+display_label = "co2_adj"
+units = "µmol mol-1"
+description = "Pre-match error: CO2_r - CO2_s at last match. Ideally 0."
+internal_name = "co2_adj"
+
+[[computed_results.match_event_results.variables]]
+display_label = "co2_at"
+units = "µmol mol-1"
+description = "CO2 at last match"
+internal_name = "co2_at"
+
+[[computed_results.match_event_results.variables]]
+display_label = "co2_cv"
+units = "%"
+description = "CV of last CO2 match"
+internal_name = "co2_cv"
+
+[[computed_results.match_event_results.variables]]
+display_label = "co2_match"
+units = "µmol mol-1"
+description = "Match correction: CO2_r - CO2_a at last pt. match."
+internal_name = "co2_match"
+
+[[computed_results.match_event_results.variables]]
+display_label = "co2_t"
+units = "s"
+description = "Last CO2 match time"
+internal_name = "co2_t"
+
+[[computed_results.match_event_results.variables]]
+display_label = "count"
+units = ""
+description = "Match count number"
+internal_name = "count"
+
+[[computed_results.match_event_results.variables]]
+display_label = "h2o_adj"
+units = "mmol mol-1"
+description = "Pre-match error: H2O_r - H2O_s at last match. Ideally 0."
+internal_name = "h2o_adj"
+
+[[computed_results.match_event_results.variables]]
+display_label = "h2o_at"
+units = "mmol mol-1"
+description = "H2O at last match"
+internal_name = "h2o_at"
+
+[[computed_results.match_event_results.variables]]
+display_label = "h2o_cv"
+units = "%"
+description = "CV of last H2O match"
+internal_name = "h2o_cv"
+
+[[computed_results.match_event_results.variables]]
+display_label = "h2o_match"
+units = "mmol mol-1"
+description = "Match correction: H2O_r - H2O_a at last pt. match."
+internal_name = "h2o_match"
+
+[[computed_results.match_event_results.variables]]
+display_label = "h2o_t"
+units = "s"
+description = "Last H2O match time"
+internal_name = "h2o_t"
+
+[[computed_results.match_event_results.variables]]
+display_label = "hhmmss"
+units = ""
+description = "Time of last match"
+internal_name = "hhmmss"
+
+[[computed_results.match_event_results.variables]]
+display_label = "time"
+units = "s"
+description = "Time of last match (Seconds since Jan 1970)"
+internal_name = "time"
+
+# Match Correction Status
+[computed_results.match_correction_status]
+source_table = "Table 4-27"
+section_title = "The moment-by-moment values associated with the current match correction"
+description = "Real-time adjustments and parameters of the gas analyzer matching process, derived from point or range matching."
+
+[[computed_results.match_correction_status.variables]]
+display_label = "MatchCO2"
+units = "µmol mol-1"
+description = "CO2 Match adjustment value"
+internal_name = "MatchCO2"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "MatchH2O"
+units = "mmol mol-1"
+description = "H2O Match adjustment value"
+internal_name = "MatchH2O"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "MatchValveR"
+units = "%"
+description = "Reference match valve position"
+internal_name = "MatchValveR"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "MatchValveS"
+units = "%"
+description = "Sample match valve position"
+internal_name = "MatchValveS"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "cf_co2_a"
+units = "mmol mol-1"
+description = "CO2 Match coeff a"
+internal_name = "cf_co2_a"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "cf_co2_b"
+units = ""
+description = "CO2 Match coeff b"
+internal_name = "cf_co2_b"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "cf_co2_c"
+units = ""
+description = "CO2 Match coeff c"
+internal_name = "cf_co2_c"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "cf_co2_d"
+units = ""
+description = "CO2 Match coeff d"
+internal_name = "cf_co2_d"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "cf_h2o_a"
+units = "mmol mol-1"
+description = "H2O Match coeff a"
+internal_name = "cf_h2o_a"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "cf_h2o_b"
+units = ""
+description = "H2O Match coeff b"
+internal_name = "cf_h2o_b"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "cf_h2o_c"
+units = ""
+description = "H2O Match coeff c"
+internal_name = "cf_h2o_c"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "cf_h2o_d"
+units = ""
+description = "H2O Match coeff d"
+internal_name = "cf_h2o_d"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "co2_elapsed"
+units = "min"
+description = "Elapsed time since CO2 match"
+internal_name = "co2_elapsed"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "co2_fit_high"
+units = "µmol mol-1"
+description = "CO2 range match fit upper limit"
+internal_name = "co2_fit_high"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "co2_fit_low"
+units = "µmol mol-1"
+description = "CO2 range match fit lower limit"
+internal_name = "co2_fit_low"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "h2o_elapsed"
+units = "min"
+description = "Elapsed time since H2O match"
+internal_name = "h2o_elapsed"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "h2o_fit_high"
+units = "mmol mol-1"
+description = "H2O range match fit upper limit"
+internal_name = "h2o_fit_high"
+
+[[computed_results.match_correction_status.variables]]
+display_label = "h2o_fit_low"
+units = "mmol mol-1"
+description = "H2O range match fit lower limit"
+internal_name = "h2o_fit_low"
+
+# MultiPhase Flash Results
+[computed_results.multi_phase_flash_results]
+source_table = "Table 4-30"
+section_title = "Settings and results specific to the latest MultiPhase Flash"
+description = "Parameters and computed values from the most recent MultiPhase Flash measurement protocol."
+
+[[computed_results.multi_phase_flash_results.variables]]
+display_label = "ID"
+units = ""
+description = "ID of this MPF flash"
+internal_name = "EVENT_ID"
+
+[[computed_results.multi_phase_flash_results.variables]]
+display_label = "P1_Fmax"
+units = ""
+description = "Fmax in Phase 1"
+internal_name = "P1_MAXF"
+
+[[computed_results.multi_phase_flash_results.variables]]
+display_label = "P2_dQdt"
+units = "mol m-2 s-2"
+description = "Phase 2 dQ/dt"
+internal_name = "P2_DQDT"
+
+[[computed_results.multi_phase_flash_results.variables]]
+display_label = "P3_ΔF"
+units = ""
+description = "Fmeasured - Fpredicted Phase 3"
+internal_name = "P3_DELTAF"
+
+[[computed_results.multi_phase_flash_results.variables]]
+display_label = "P1_dur"
+units = "ms"
+description = "Phase 1 duration"
+internal_name = "PHASE1_DURATION"
+
+[[computed_results.multi_phase_flash_results.variables]]
+display_label = "P2_dur"
+units = "ms"
+description = "Phase 2 duration"
+internal_name = "PHASE2_DURATION"
+
+[[computed_results.multi_phase_flash_results.variables]]
+display_label = "P3_dur"
+units = "ms"
+description = "Phase 3 duration"
+internal_name = "PHASE3_DURATION"
+
+[[computed_results.multi_phase_flash_results.variables]]
+display_label = "P1_Qmax"
+units = "µmol m-2 s-1"
+description = "Qmax in Phase 1"
+internal_name = "QMAX"
+
+# Real-time data during soil chamber observation
+[computed_results.soil_chamber_data]
+source_table = "Table 4-36"
+section_title = "Real-time data available during a soil chamber observation"
+description = "Current measurements, computed values, and status indicators specific to the soil respiration chamber during an active observation."
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "CO2"
+units = "µmol mol-1"
+description = "CO2 in soil chamber"
+internal_name = "CO2"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "CStatus"
+units = ""
+description = "Chamber location status"
+internal_name = "CStatus"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "Cdry"
+units = "µmol mol-1"
+description = "Dry CO2 in soil chamber"
+internal_name = "Cdry"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "Elapsed"
+units = "s"
+description = "Time chamber has been closed"
+internal_name = "Elapsed"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "Flux_to"
+units = "µmol m-2 s-1"
+description = "Estimate of Flux_to during a measurement"
+internal_name = "F_avg"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "H2O"
+units = "mmol mol-1"
+description = "H2O in soil chamber"
+internal_name = "H2O"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "MStatus"
+units = ""
+description = "Measurement status"
+internal_name = "MStatus"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "MStatusN"
+units = ""
+description = "Measurement status index (0-5)"
+internal_name = "MStatusN"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "Msoil"
+units = "m3 m-3"
+description = "Soil moisture wfv"
+internal_name = "Msoil"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "Pressure"
+units = "kPa"
+description = "Atmospheric Pressure"
+internal_name = "Pressure"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "Progress"
+units = "%"
+description = "Percent completed of measurement"
+internal_name = "Progress"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "RH"
+units = "%"
+description = "Relative Humidity in soil chamber"
+internal_name = "RH"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "Rep"
+units = ""
+description = "Rep Status"
+internal_name = "Rep"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "RepProg"
+units = "%"
+description = "Percent completed of current rep"
+internal_name = "RepProg"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "STATE"
+units = ""
+description = "Chamber state value"
+internal_name = "STATE"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "TIME"
+units = "s"
+description = "Time_t of data record"
+internal_name = "TIME"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "Tair_sc"
+units = "°C"
+description = "Air temp in soil chamber"
+internal_name = "Tchamber"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "Tsoil"
+units = "°C"
+description = "Soil temperature"
+internal_name = "Tsoil"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "Vbellows"
+units = "V"
+description = "Bellows signal"
+internal_name = "VBELLOWS"
+
+[[computed_results.soil_chamber_data.variables]]
+display_label = "dCdry/dt"
+units = "µmol mol-1 s-1"
+description = "Rate of change Cdry"
+internal_name = "dCdry/dt"
+
+# Computations available following a soil chamber observation
+[computed_results.soil_chamber_computations_after_observation]
+source_table = "Table 4-37"
+section_title = "Computations available following a soil chamber observation"
+description = "Results and statistical outputs calculated after a complete soil respiration chamber measurement, often involving regression analysis."
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "Cdry_o"
+units = "µmol mol-1"
+description = "Initial Cdry"
+internal_name = "Cdry_o"
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "F_CV"
+units = "%"
+description = "CV of flux"
+internal_name = "F_CV"
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "Flux_to"
+units = "µmol m-2 s-1"
+description = "Flux computed at Cdry_o"
+internal_name = "F_o"
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "Flux_target"
+units = "µmol m-2 s-1"
+description = "Flux computed at target concentration"
+internal_name = "F_target"
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "MeasNum"
+units = ""
+description = "Measurement number"
+internal_name = "MeasNum"
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "Ms_avg"
+units = "m3 m-3"
+description = "Soil moisture wfv average"
+internal_name = "Ms_avg"
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "N"
+units = ""
+description = "Number points in regression"
+internal_name = "N"
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "P_to"
+units = "kPa"
+description = "Initial atmospheric pressure"
+internal_name = "P_o"
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "RepNum"
+units = ""
+description = "Rep number"
+internal_name = "RepNum"
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "T_to"
+units = "°C"
+description = "Initial air temperature"
+internal_name = "T_o"
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "Ts_avg"
+units = "°C"
+description = "Soil temperature average"
+internal_name = "Ts_avg"
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "W_to"
+units = "mmol mol-1"
+description = "Initial water concentration"
+internal_name = "W_o"
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "intercept"
+units = "µmol mol-1 s-1"
+description = "Y-intercept of the Cdry slope regression"
+internal_name = "intercept"
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "r2"
+units = ""
+description = "Coefficient of determination (r²) for dCdry/dt vs. Cdry regression"
+internal_name = "r2"
+
+[[computed_results.soil_chamber_computations_after_observation.variables]]
+display_label = "slope"
+units = "s-1"
+description = "Rate constant (slope) from dCdry/dt vs. Cdry regression"
+internal_name = "slope"
+
+# Stability Metrics
+[computed_results.stability_metrics]
+source_table = "Table 4-40"
+section_title = "Stability metrics based on targeted variables"
+description = "Statistical computations (mean, standard deviation, rate of change) used to assess the stability of various measured parameters."
+
+[[computed_results.stability_metrics.variables]]
+display_label = "ΔCO2:MN"
+units = "µmol mol-1"
+description = "Mean of ΔCO2 (Sample - Reference)"
+internal_name = "CO2_d_Meas2_MN"
+
+[[computed_results.stability_metrics.variables]]
+display_label = "ΔCO2:OK"
+units = ""
+description = "Stable status for ΔCO2 (Boolean)"
+internal_name = "CO2_d_Meas2_OK"
+
+[[computed_results.stability_metrics.variables]]
+display_label = "ΔCO2:SD"
+units = "µmol mol-1"
+description = "Standard deviation of ΔCO2"
+internal_name = "CO2_d_Meas2_SD"
+
+[[computed_results.stability_metrics.variables]]
+display_label = "ΔCO2:SLP"
+units = "µmol mol-1 min-1"
+description = "Rate of change of ΔCO2"
+internal_name = "CO2_d_Meas2_SLP"
+
+[[computed_results.stability_metrics.variables]]
+display_label = "F:MN"
+units = ""
+description = "Mean of Modulated Fluorescence (F)"
+internal_name = "FLUOR_FlrLS_MN"
+
+[[computed_results.stability_metrics.variables]]
+display_label = "F:OK"
+units = ""
+description = "Stable status for Modulated Fluorescence (F)"
+internal_name = "FLUOR_FlrLS_OK"
+
+[[computed_results.stability_metrics.variables]]
+display_label = "F:SD"
+units = ""
+description = "Standard deviation of Modulated Fluorescence (F)"
+internal_name = "FLUOR_FlrLS_SD"
+
+[[computed_results.stability_metrics.variables]]
+display_label = "F:SLP"
+units = "min-1"
+description = "Rate of change of Modulated Fluorescence (F)"
+internal_name = "FLUOR_FlrLS_SLP"
+
+[[computed_results.stability_metrics.variables]]
+display_label = "ΔH2O:MN"
+units = "mmol mol-1"
+description = "Mean of ΔH2O (Sample - Reference)"
+internal_name = "H2O_d_Meas2_MN"
+
+[[computed_results.stability_metrics.variables]]
+display_label = "ΔH2O:OK"
+units = ""
+description = "Stable status for ΔH2O (Boolean)"
+internal_name = "H2O_d_Meas2_OK"
+
+[[computed_results.stability_metrics.variables]]
+display_label = "ΔH2O:SD"
+units = "mmol mol-1"
+description = "Standard deviation of ΔH2O"
+internal_name = "H2O_d_Meas2_SD"
+
+[[computed_results.stability_metrics.variables]]
+display_label = "ΔH2O:SLP"
+units = "mmol mol-1 min-1"
+description = "Rate of change of ΔH2O"
+internal_name = "H2O_d_Meas2_SLP"
+
+[[computed_results.stability_metrics.variables]]
+display_label = "Stable"
+units = ""
+description = "Number of stable items currently being tracked"
+internal_name = "Stable"
+
+[[computed_results.stability_metrics.variables]]
+display_label = "State"
+units = ""
+description = "Ratio of stable items to total tracked items (stable # / total #)"
+internal_name = "State"
+
+[[computed_results.stability_metrics.variables]]
+display_label = "Total"
+units = ""
+description = "Total number of items being tracked for stability"
+internal_name = "Total"
+
+# User Defined Variables
+[computed_results.user_defined_variables]
+source_table = "Table 4-44"
+section_title = "User defined variables"
+description = "Custom variables defined by the user, whose content varies based on user input and custom calculations."
+
+[[computed_results.user_defined_variables.variables]]
+display_label = "myVariable"
+units = "" # Units provided in example are "km", but description is "flow times area". "km" for flow * area implies certain units for flow and area, often (m3/s) * m2 = m5/s ? Or maybe it refers to something else? Sticking to prompt for units for now. Given "flow times area", perhaps 'L m-2 s-1' or similar, but the prompt's `km` implies some other custom calculation. Sticking to empty units for now, as `km` does not logically follow from `flow times area`.
+description = "flow times area"
+internal_name = "myVariable"
+
+
+# --- Instrument Measurements ---
+# This section contains direct measurements from various parts of the instrument.
+
+# Head Measurements
+[instrument_measurements.head_measurements]
+source_table = "Table 4-28"
+section_title = "Essential measurements coming from the head"
+description = "Direct measurements from the instrument head that serve as inputs for gas exchange computations."
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "CO2_a"
+units = "µmol mol-1"
+description = "Sample cell CO2 w/o match adjust"
+internal_name = "CO2_a"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "CO2_r"
+units = "µmol mol-1"
+description = "Reference cell CO2 concentration"
+internal_name = "CO2_r"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "CO2_s"
+units = "µmol mol-1"
+description = "Sample cell CO2 concentration"
+internal_name = "CO2_s"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "Fan_speed"
+units = "rpm"
+description = "Chamber fan rotation rate"
+internal_name = "Fan_speed"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "Flow"
+units = "µmol s-1"
+description = "Flow rate into chamber"
+internal_name = "Flow"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "H2O_a"
+units = "mmol mol-1"
+description = "Sample cell H2O w/o match adjust"
+internal_name = "H2O_a"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "H2O_r"
+units = "mmol mol-1"
+description = "Reference cell H2O concentration"
+internal_name = "H2O_r"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "H2O_s"
+units = "mmol mol-1"
+description = "Sample cell H2O concentration"
+internal_name = "H2O_s"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "Offset"
+units = "°C"
+description = "Offset built-in to Tleaf"
+internal_name = "Offset"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "Offset2"
+units = "°C"
+description = "Offset built-in to Tleaf2"
+internal_name = "Offset2"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "Qamb_in"
+units = "µmol m-2 s-1"
+description = "In-chamber ambient PPFD"
+internal_name = "PPFD_in"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "Qamb_out"
+units = "µmol m-2 s-1"
+description = "External ambient PPFD"
+internal_name = "PPFD_out"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "ΔPcham"
+units = "kPa"
+description = "Chamber overpressure"
+internal_name = "Pchamber"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "Pa"
+units = "kPa"
+description = "Atmospheric pressure"
+internal_name = "Press"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "TIME"
+units = "s"
+description = "Seconds since Jan 1970"
+internal_name = "TIME"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "Tair"
+units = "°C"
+description = "Chamber air temperature"
+internal_name = "Tchamber"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "Tleaf"
+units = "°C"
+description = "Leaf thermocouple #1"
+internal_name = "Tleaf"
+
+[[instrument_measurements.head_measurements.variables]]
+display_label = "Tleaf2"
+units = "°C"
+description = "Leaf thermocouple #2"
+internal_name = "Tleaf2"
+
+# Secondary Head Measurements
+[instrument_measurements.secondary_head_measurements]
+source_table = "Table 4-29"
+section_title = "Additional measurements from the head"
+description = "Additional measurements from the head, useful for diagnostics or advanced analysis, but not directly used in standard gas exchange computations."
+
+[[instrument_measurements.secondary_head_measurements.variables]]
+display_label = "CO2_b"
+units = "µmol mol-1"
+description = "Reference cell CO2 w/o match adjust"
+internal_name = "CO2_b"
+
+[[instrument_measurements.secondary_head_measurements.variables]]
+display_label = "ΔCO2"
+units = "µmol mol-1"
+description = "Sample - Reference CO2"
+internal_name = "CO2_d"
+
+[[instrument_measurements.secondary_head_measurements.variables]]
+display_label = "CO2_r_d"
+units = "µmol mol-1"
+description = "Reference cell CO2, dry mole fraction"
+internal_name = "CO2_r_d"
+
+[[instrument_measurements.secondary_head_measurements.variables]]
+display_label = "CO2_s_d"
+units = "µmol mol-1"
+description = "Sample cell CO2, dry mole fraction"
+internal_name = "CO2_s_d"
+
+[[instrument_measurements.secondary_head_measurements.variables]]
+display_label = "H2O_b"
+units = "mmol mol-1"
+description = "Reference cell H2O w/o match adjust"
+internal_name = "H2O_b"
+
+[[instrument_measurements.secondary_head_measurements.variables]]
+display_label = "ΔH2O"
+units = "mmol mol-1"
+description = "Sample - Reference H2O"
+internal_name = "H2O_d"
+
+[[instrument_measurements.secondary_head_measurements.variables]]
+display_label = "Td_r"
+units = "°C"
+description = "Reference cell dew point"
+internal_name = "Td_r"
+
+[[instrument_measurements.secondary_head_measurements.variables]]
+display_label = "Td_s"
+units = "°C"
+description = "Sample cell dew point"
+internal_name = "Td_s"
+
+[[instrument_measurements.secondary_head_measurements.variables]]
+display_label = "e_r"
+units = "kPa"
+description = "Reference cell vapor pressure"
+internal_name = "e_r"
+
+[[instrument_measurements.secondary_head_measurements.variables]]
+display_label = "e_s"
+units = "kPa"
+description = "Sample cell vapor pressure"
+internal_name = "e_s"
+
+# Raw Head Measurements
+[instrument_measurements.raw_head_measurements]
+source_table = "Table 4-33"
+section_title = "Low-level readings from the head"
+description = "Raw voltage signals and counts from the instrument head, serving as inputs for computing derived measurements."
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "Flow_s_v"
+units = "V"
+description = "Sample cell flow signal"
+internal_name = "Flow_a_v"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "Flow_r_v"
+units = "V"
+description = "Reference cell flow signal"
+internal_name = "Flow_b_v"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "VPchamber"
+units = "V"
+description = "Chamber pressure sensor signal"
+internal_name = "VPchamber"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "Vflow"
+units = "V"
+description = "Flow meter signal"
+internal_name = "Vflow"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "Wc_s"
+units = ""
+description = "Absorbing counts, CO2 sample"
+internal_name = "Wc_a"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "Wc_r"
+units = ""
+description = "Absorbing counts, CO2 ref"
+internal_name = "Wc_b"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "Wco_s"
+units = ""
+description = "Non-absorbing counts, CO2 sample"
+internal_name = "Wco_a"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "Wco_r"
+units = ""
+description = "Non-absorbing counts, CO2 ref"
+internal_name = "Wco_b"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "Ww_s"
+units = ""
+description = "Absorbing counts, H2O sample"
+internal_name = "Ww_a"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "Ww_r"
+units = ""
+description = "Absorbing counts, H2O ref"
+internal_name = "Ww_b"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "Wwo_s"
+units = ""
+description = "Non-absorbing counts, H2O sample"
+internal_name = "Wwo_a"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "Wwo_r"
+units = ""
+description = "Non-absorbing counts, H2O ref"
+internal_name = "Wwo_b"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "abs_c_a"
+units = ""
+description = "CO2 absorptance cell A"
+internal_name = "abs_c_a"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "abs_c_b"
+units = ""
+description = "CO2 absorptance cell B"
+internal_name = "abs_c_b"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "abs_h_a"
+units = ""
+description = "H2O absorptance cell A"
+internal_name = "abs_h_a"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "abs_h_b"
+units = ""
+description = "H2O absorptance cell B"
+internal_name = "abs_h_b"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "Tleaf2_mv"
+units = "mV"
+description = "Leaf2 temp V"
+internal_name = "leaf2_t_mv"
+
+[[instrument_measurements.raw_head_measurements.variables]]
+display_label = "Tleaf_mv"
+units = "mV"
+description = "Leaf temp V"
+internal_name = "leaf_t_mv"
+
+
+# --- Instrument Settings ---
+# This section defines various user-configurable parameters and thresholds for instrument operation and computations.
+
+# Dynamic Measurement Configuration
+[instrument_settings.dynamic_measurement]
+source_table = "Table 4-13"
+section_title = "The dynamic configuration settings"
+description = "User-configurable parameters and thresholds specifically for dynamic assimilation and transpiration measurements."
+
+[[instrument_settings.dynamic_measurement.variables]]
+display_label = "Min CO2 Slope"
+units = "µmol mol-1 s-1"
+description = "Minimum usable slope for CO2"
+internal_name = "co2_slope_threshold"
+
+[[instrument_settings.dynamic_measurement.variables]]
+display_label = "Min H2O Slope"
+units = "mmol mol-1 s-1"
+description = "Minimum usable slope for H2O"
+internal_name = "h2o_slope_threshold"
+
+# User Calibration Values
+[instrument_settings.user_calibration_values] # NEW SECTION
+source_table = "Table 4-45"
+section_title = "A selection of the current head user calibration values"
+description = "User-configurable calibration values for various sensors and measurements on the instrument head."
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "CO2_s_span1"
+units = ""
+description = "User span 1 for sample CO2"
+internal_name = "co2aspan1"
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "CO2_s_span2"
+units = ""
+description = "User span 2 for sample CO2"
+internal_name = "co2aspan2"
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "CO2_s_zero"
+units = ""
+description = "User zero for sample CO2"
+internal_name = "co2azero"
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "CO2_r_span1"
+units = ""
+description = "User span 1 for reference CO2" # Corrected description to match internal_name 'co2bspan1' implying reference, not sample.
+internal_name = "co2bspan1"
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "CO2_r_span2"
+units = ""
+description = "User span 2 for reference CO2" # Corrected description
+internal_name = "co2bspan2"
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "CO2_r_zero"
+units = ""
+description = "User zero for reference CO2"
+internal_name = "co2bzero"
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "Fs_zero"
+units = ""
+description = "User zero for sample flow meter"
+internal_name = "flowazero"
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "Fr_zero"
+units = ""
+description = "User zero for reference flow meter"
+internal_name = "flowbzero"
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "F_zero"
+units = ""
+description = "User zero for main flow meter"
+internal_name = "flowmeterzero"
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "H2O_s_span1"
+units = ""
+description = "User span 1 for sample H2O"
+internal_name = "h2oaspan1"
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "H2O_s_span2"
+units = ""
+description = "User span 2 for sample H2O"
+internal_name = "h2oaspan2"
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "H2O_s_zero"
+units = ""
+description = "User zero for sample H2O"
+internal_name = "h2oazero"
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "H2O_r_span1"
+units = ""
+description = "User span 1 for reference H2O" # Corrected description to match internal_name 'h2obspan1' implying reference, not sample.
+internal_name = "h2obspan1"
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "H2O_r_span2"
+units = ""
+description = "User span 2 for reference H2O" # Corrected description
+internal_name = "h2obspan2"
+
+[[instrument_settings.user_calibration_values.variables]]
+display_label = "H2O_r_zero"
+units = ""
+description = "User zero for reference H2O"
+internal_name = "h2obzero"

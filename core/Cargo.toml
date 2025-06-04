@@ -1,0 +1,16 @@
+[package]
+name = "licor-core"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["Riley Leff <rileyleff@gmail.com>"]
+description = "Core library for parsing LI-COR instrument data"
+
+[dependencies]
+thiserror = { workspace = true }
+serde = { workspace = true }
+toml = { workspace = true }
+polars = { workspace = true }
+once_cell = "1.19"
+
+[dev-dependencies]

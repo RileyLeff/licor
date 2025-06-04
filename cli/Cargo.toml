@@ -1,0 +1,20 @@
+[package]
+name = "licor"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["Riley Leff <rileyleff@gmail.com>"]
+description = "Command-line tool for converting LI-COR instrument data"
+
+[[bin]]
+name = "licor"
+path = "src/main.rs"
+
+[dependencies]
+licor-core = { path = "../core" }
+clap = { workspace = true }
+thiserror = { workspace = true }
+glob = "0.3"
+polars = { workspace = true }
+
+[dev-dependencies]
