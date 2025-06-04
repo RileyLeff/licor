@@ -6,7 +6,12 @@
       "Bash(grep:*)",
       "Bash(cargo test)",
       "Bash(cargo test:*)",
-      "Bash(cargo:*)"
+      "Bash(cargo:*)",
+      "Bash(maturin develop:*)",
+      "Bash(uv venv:*)",
+      "Bash(source:*)",
+      "Bash(uv add:*)",
+      "Bash(uv pip install:*)"
     ],
     "deny": []
   }

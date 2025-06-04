@@ -1,0 +1,18 @@
+[package]
+name = "licor-client"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "licor_client"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { workspace = true }
+licor-core = { path = "../core" }
+thiserror = { workspace = true }
+polars = { workspace = true }
+pyo3-polars = "0.21"
+
+[build-dependencies]
+pyo3-build-config = "0.24"

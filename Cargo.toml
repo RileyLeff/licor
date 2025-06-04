@@ -1,5 +1,5 @@
 [workspace]
-members = ["core", "cli"]
+members = ["core", "cli", "python-client"]
 resolver = "2"
 
 [workspace.dependencies]
@@ -7,7 +7,8 @@ thiserror = "2.0"
 clap = { version = "4.5", features = ["derive"] }
 serde = { version = "1.0", features = ["derive"] }
 toml = "0.8"
-polars = { version = "0.46", features = ["lazy", "parquet", "strings"] }
+polars = { version = "0.48", features = ["lazy", "parquet", "strings"] }
+pyo3 = { version = "0.24", features = ["extension-module"] }
 
 [workspace.metadata]
 name = "licor-parser"

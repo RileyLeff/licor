@@ -1,0 +1,40 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "licor-client"
+version = "0.1.0"
+description = "Python client for LI-COR instrument data conversion"
+authors = [
+    {name = "Riley Leff", email = "rileyleff@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Rust",
+    "Topic :: Scientific/Engineering",
+]
+keywords = ["licor", "photosynthesis", "plant-physiology", "data-conversion"]
+
+[project.optional-dependencies]
+polars = ["polars>=0.20.0"]
+pandas = ["pandas>=1.0.0", "pyarrow>=10.0.0"]
+dataframes = ["polars>=0.20.0", "pandas>=1.0.0", "pyarrow>=10.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/rileyleff/licor"
+Repository = "https://github.com/rileyleff/licor"
+Issues = "https://github.com/rileyleff/licor/issues"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
