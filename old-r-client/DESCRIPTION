@@ -1,0 +1,19 @@
+Package: licorclient
+Type: Package
+Title: R Client for LI-COR Instrument Data Conversion
+Version: 0.1.0
+Authors@R: person("Riley", "Leff", email = "rileyleff@gmail.com", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6171-9594"))
+Description: Provides R bindings for converting LI-COR instrument data
+    (particularly LI-6800 Portable Photosynthesis System) from proprietary
+    formats to analysis-ready data frames and Parquet files. Built on a 
+    robust Rust core with type-safe parsing and comprehensive error handling.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.0
+SystemRequirements: Cargo (Rust's package manager), rustc
+Suggests: 
+    tibble,
+    testthat (>= 3.0.0)
+Config/rextendr/version: 0.3.1

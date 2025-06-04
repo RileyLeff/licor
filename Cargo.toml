@@ -1,5 +1,5 @@
 [workspace]
-members = ["core", "cli", "python-client"]
+members = ["core", "cli", "python-client", "r-client/src/rust"]
 resolver = "2"
 
 [workspace.dependencies]

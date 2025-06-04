@@ -11,7 +11,14 @@
       "Bash(uv venv:*)",
       "Bash(source:*)",
       "Bash(uv add:*)",
-      "Bash(uv pip install:*)"
+      "Bash(uv pip install:*)",
+      "WebFetch(domain:extendr.github.io)",
+      "Bash(cp:*)",
+      "Bash(R:*)",
+      "Bash(python3:*)",
+      "Bash(mv:*)",
+      "Bash(ls:*)",
+      "Bash(timeout:*)"
     ],
     "deny": []
   }
