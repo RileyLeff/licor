@@ -9,5 +9,5 @@ name = 'licorclient'
 
 [dependencies]
 extendr-api = { version = "0.7", features = ["result_list"] }
-licor-core = { path = "../../../core" }
+licor-core = { git = "https://github.com/RileyLeff/licor.git"}
 polars = { version = "0.48", features = ["lazy", "parquet", "strings"] }

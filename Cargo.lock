@@ -1273,7 +1273,7 @@ version = "0.1.0"
 dependencies = [
  "clap",
  "glob",
- "licor-core",
+ "licor-core 0.1.0",
  "polars",
  "thiserror 2.0.12",
 ]
@@ -1282,7 +1282,7 @@ dependencies = [
 name = "licor-client"
 version = "0.1.0"
 dependencies = [
- "licor-core",
+ "licor-core 0.1.0",
  "polars",
  "pyo3",
  "pyo3-build-config",
@@ -1302,11 +1302,23 @@ dependencies = [
 ]
 
 [[package]]
+name = "licor-core"
+version = "0.1.0"
+source = "git+https://github.com/RileyLeff/licor.git#bbfbf5159cd52ff29b0c971c7d748168774f19f1"
+dependencies = [
+ "once_cell",
+ "polars",
+ "serde",
+ "thiserror 2.0.12",
+ "toml",
+]
+
+[[package]]
 name = "licorclient"
 version = "0.1.0"
 dependencies = [
  "extendr-api",
- "licor-core",
+ "licor-core 0.1.0 (git+https://github.com/RileyLeff/licor.git)",
  "polars",
 ]
 
